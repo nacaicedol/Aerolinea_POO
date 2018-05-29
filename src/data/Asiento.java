@@ -51,5 +51,5 @@ public class Asiento {
     public String toString() {
         return "Asiento{" + "idasiento=" + idasiento + ", ocupado=" + ocupado + ", nombrepasajero=" + nombrepasajero + ", idpasajero=" + idpasajero + '}';
     }
- 
+
 }

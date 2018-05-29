@@ -4,42 +4,42 @@ import java.util.ArrayList;
 import java.util.HashMap;
  
 public class Administracion extends Usuarios {
-    private HashMap<String,Vuelos> listavuelos;
-    private HashMap<Long, Pilotos> listapilotos;
-    private HashMap<String, Aviones> listaaviones;
+    private ArrayList<Vuelos> listavuelos;
+    private ArrayList<Pilotos> listapilotos;
+    private ArrayList<Aviones> listaaviones;
     private ArrayList<Clientes> listaclientes;
     private final String telefonocontacto="301252515";
     private final String correocontacto="aero@line.com";
     private final String direccion="cll 27 # 55 - 40";
 
-    public Administracion(HashMap<String, Vuelos> listavuelos, HashMap<Long, Pilotos> listapilotos, HashMap<String, Aviones> listaaviones, ArrayList<Clientes> listaclientes) {
+    public Administracion(ArrayList<Vuelos> listavuelos, ArrayList<Pilotos> listapilotos, ArrayList< Aviones> listaaviones, ArrayList<Clientes> listaclientes) {
         this.listavuelos = listavuelos;
         this.listapilotos = listapilotos;
         this.listaaviones = listaaviones;
         this.listaclientes = listaclientes;
     }
 
-    public HashMap<String, Vuelos> getListavuelos() {
+    public ArrayList<Vuelos> getListavuelos() {
         return listavuelos;
     }
 
-    public void setListavuelos(HashMap<String, Vuelos> listavuelos) {
+    public void setListavuelos(ArrayList<Vuelos> listavuelos) {
         this.listavuelos = listavuelos;
     }
 
-    public HashMap<Long, Pilotos> getListapilotos() {
+    public ArrayList<Pilotos> getListapilotos() {
         return listapilotos;
     }
 
-    public void setListapilotos(HashMap<Long, Pilotos> listapilotos) {
+    public void setListapilotos(ArrayList<Pilotos> listapilotos) {
         this.listapilotos = listapilotos;
     }
 
-    public HashMap<String, Aviones> getListaaviones() {
+    public ArrayList<Aviones> getListaaviones() {
         return listaaviones;
     }
 
-    public void setListaaviones(HashMap<String, Aviones> listaaviones) {
+    public void setListaaviones(ArrayList<Aviones> listaaviones) {
         this.listaaviones = listaaviones;
     }
 
@@ -125,14 +125,6 @@ public class Administracion extends Usuarios {
 
     @Override
     public String toString() {
-        return "Administracion{" + "telefonocontacto=" + telefonocontacto + ", correocontacto=" + correocontacto + ", direccion=" + direccion + '}';
-    }
-    
-    public String toString(HashMap<String,Vuelos> listavuelos) {
-        return "Liata de vuelos "+listavuelos;
-    }
-        
-    public String toString(ArrayList<Clientes> listaclientes) {
-        return "Liata de clientes "+listaclientes;
+        return "Aerolinea\n" + " Telefono " + telefonocontacto + "\n Correo " + correocontacto + "\n Direccion" + direccion;
     }
 }

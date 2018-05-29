@@ -1,15 +1,15 @@
 package data;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Tiquete {
     private double precio=0;
-    private HashMap<String, Asiento> asientoscomprados;
+    private ArrayList<Asiento> asientoscomprados;
     private double pesoequpaje;
     private int cantidadequipaje;
     private Vuelos vuelo;
 
-    public Tiquete(HashMap<String, Asiento> asientoscomprados, double pesoequpaje, int cantidadequipaje, Vuelos vuelo) {
+    public Tiquete(ArrayList< Asiento> asientoscomprados, double pesoequpaje, int cantidadequipaje, Vuelos vuelo) {
         this.asientoscomprados = asientoscomprados;
         this.pesoequpaje = pesoequpaje;
         this.cantidadequipaje = cantidadequipaje;
@@ -24,11 +24,11 @@ public class Tiquete {
         this.precio = precio;
     }
 
-    public HashMap<String, Asiento> getAsientoscomprados() {
+    public ArrayList<Asiento> getAsientoscomprados() {
         return asientoscomprados;
     }
 
-    public void setAsientoscomprados(HashMap<String, Asiento> asientoscomprados) {
+    public void setAsientoscomprados(ArrayList<Asiento> asientoscomprados) {
         this.asientoscomprados = asientoscomprados;
     }
 

@@ -5,10 +5,10 @@ import java.util.HashMap;
 
 public class Pilotos extends Usuarios{
     private Aviones avion;
-    private HashMap<String,Vuelos> listavuelos;
+    private ArrayList<Vuelos> listavuelos;
     private ArrayList<Tiquete> tiquetes;
 
-    public Pilotos(Aviones avion, HashMap<String, Vuelos> listavuelos, ArrayList<Tiquete> tiquetes) {
+    public Pilotos(Aviones avion, ArrayList< Vuelos> listavuelos, ArrayList<Tiquete> tiquetes) {
         this.avion = avion;
         this.listavuelos = listavuelos;
         this.tiquetes = tiquetes;
@@ -22,11 +22,11 @@ public class Pilotos extends Usuarios{
         this.avion = avion;
     }
 
-    public HashMap<String, Vuelos> getListavuelos() {
+    public ArrayList<Vuelos> getListavuelos() {
         return listavuelos;
     }
 
-    public void setListavuelos(HashMap<String, Vuelos> listavuelos) {
+    public void setListavuelos(ArrayList<Vuelos> listavuelos) {
         this.listavuelos = listavuelos;
     }
 

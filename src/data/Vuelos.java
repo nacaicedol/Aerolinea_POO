@@ -4,17 +4,15 @@ package data;
 public class Vuelos {
     private Fecha horasalida;
     private Fecha horallegada;
-    private Fecha duracion;
     private String origen;
     private String destino;
     private Pilotos piloto;
     private Aviones avion;
     private double precio;
 
-    public Vuelos(Fecha horasalida, Fecha horallegada, Fecha duracion, String origen, String destino, Pilotos piloto, Aviones avion, double precio) {
+    public Vuelos(Fecha horasalida, Fecha horallegada, String origen, String destino, Pilotos piloto, Aviones avion, double precio) {
         this.horasalida = horasalida;
         this.horallegada = horallegada;
-        this.duracion = duracion;
         this.origen = origen;
         this.destino = destino;
         this.piloto = piloto;
@@ -44,14 +42,6 @@ public class Vuelos {
 
     public void setHorallegada(Fecha horallegada) {
         this.horallegada = horallegada;
-    }
-
-    public Fecha getDuracion() {
-        return duracion;
-    }
-
-    public void setDuracion(Fecha duracion) {
-        this.duracion = duracion;
     }
 
     public String getOrigen() {
@@ -88,19 +78,6 @@ public class Vuelos {
 
     @Override
     public String toString() {
-        return "Vuelos{" + "horasalida=" + horasalida + ", horallegada=" + horallegada + ", duracion=" + duracion + ", origen=" + origen + ", destino=" + destino + '}';
+        return "Vuelos{" + "horasalida=" + horasalida + ", horallegada=" + horallegada + ", origen=" + origen + ", destino=" + destino + '}';
     }
-
-
-
-    
-
-    
-
-    
-
-    
-    
-    
-    
 }

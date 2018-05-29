@@ -1,12 +1,13 @@
 package data;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Aviones {
     private String idavion;
-    private HashMap<String, Asiento> asientos;
+    private ArrayList<Asiento> asientos;
 
-    public Aviones(String idavion, HashMap<String, Asiento> asientos) {
+    public Aviones(String idavion, ArrayList<Asiento> asientos) {
         this.idavion = idavion;
         this.asientos = asientos;
     }
@@ -19,11 +20,11 @@ public class Aviones {
         this.idavion = idavion;
     }
 
-    public HashMap<String, Asiento> getAsientos() {
+    public ArrayList< Asiento> getAsientos() {
         return asientos;
     }
 
-    public void setAsientos(HashMap<String, Asiento> asientos) {
+    public void setAsientos(ArrayList< Asiento> asientos) {
         this.asientos = asientos;
     }
 

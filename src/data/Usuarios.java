@@ -3,7 +3,7 @@ package data;
 public abstract class Usuarios {
     protected String nombre;
     protected String apellido;
-    protected long id;
+    protected Long id;
     protected String correo;
     protected String contraseña;
     protected String telefono;
