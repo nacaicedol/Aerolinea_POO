@@ -14,7 +14,7 @@ import javax.swing.*;
  * @author NICOLAS
  */
 public class Test {
-   static void listaAsientos(ArrayList<Asiento> mapa1a){
+ /*  static void listaAsientos(ArrayList<Asiento> mapa1a){
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese el numero de filas de Asientos del avion");
         int filasasientos = leer.nextInt();
@@ -240,10 +240,10 @@ public class Test {
     admin.setCorreo("correo@prueba.com");
     admin.setContraseña("noes1234");
 
- /*   Clientes clienteprueba = new Clientes(listatiquetescliente);      PARACREAR VUELOS PREEXISTENTES
-    listaAsientos(listaasientos);
-    Pilotos pilotoprueba = new Pilotos(crearAvion(listaasientos),listavuelospiloto, listatiquetespiloto);
-    listavuelos.add(crearVuelo(pilotoprueba, pilotoprueba.getAvion())); */
+ //   Clientes clienteprueba = new Clientes(listatiquetescliente);      PARACREAR VUELOS PREEXISTENTES
+  //  listaAsientos(listaasientos);
+   // Pilotos pilotoprueba = new Pilotos(crearAvion(listaasientos),listavuelospiloto, listatiquetespiloto);
+   // listavuelos.add(crearVuelo(pilotoprueba, pilotoprueba.getAvion())); 
     
     Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese la opcion \n"
@@ -339,6 +339,6 @@ public class Test {
                 System.out.println("mistake");
                 break;
         } 
-    }
+    }*/
 }
 

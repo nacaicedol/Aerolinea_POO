@@ -18,6 +18,9 @@ public class Administracion extends Usuarios {
         this.listaaviones = listaaviones;
         this.listaclientes = listaclientes;
     }
+    public Administracion(){
+        
+    }
 
     public ArrayList<Vuelos> getListavuelos() {
         return listavuelos;
@@ -125,6 +128,14 @@ public class Administracion extends Usuarios {
 
     @Override
     public String toString() {
-        return "Aerolinea\n" + " Telefono " + telefonocontacto + "\n Correo " + correocontacto + "\n Direccion" + direccion;
+        String a = ("Aerolinea, demuestra con su creatividad en el nombre que es la marca comercial que representa a las aerolíneas "
+                + "latinoamericanas integradas en Aerolinea Holdings SA. Su plantilla"
+                + " de más de 18.000 empleados proporciona un servicio de primera clase."
+                + " Aerolinea presta servicios regulares de transporte aéreo de pasajeros y "
+                + "de carga en más de 100 destinos directos, bueno más o menos como a 3, en 26 países (realmente en uno) de todo el continente"
+                + " americano y europeo (más que todo solo en latinoamerica), con su moderna flota de 155 aeronaves de corto, medio "
+                + "y largo recorrido, o solo unas 4 de corto, pero al menos nuestros pilotos no entran en para por explotacion laboral"
+                + " ni tenemos despidos injustificados.\n Gracias por comfiar en nostros, los amamos<3.");
+        return a+"\n \n \n Telefono " + telefonocontacto + "\n Correo " + correocontacto + "\n Direccion" + direccion;
     }
 }
