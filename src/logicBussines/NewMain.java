@@ -18,7 +18,8 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new Visitante().setVisible(true);
+        Visitante vist = new Visitante();
+        vist.getWindowListeners();
     }
     
 }

@@ -173,7 +173,6 @@ public class Test {
        table.setShowVerticalLines(false);
        JScrollPane panel = new JScrollPane(table);
        frame.add(panel);
-       frame.pack();
        frame.setVisible(true);
    }    
    static JFrame tablasadminvuelos(ArrayList<Vuelos> listavuelos){

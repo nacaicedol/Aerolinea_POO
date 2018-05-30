@@ -16,9 +16,6 @@ public class Visitante extends javax.swing.JFrame {
      */
     public Visitante() {
         initComponents();
-        jDialog1.setEnabled(true);
-        jDialog1.setResizable(true);
-        jDialog1.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         
         txtcorreoacc.setEnabled(false);
         txtpassIses.setEnabled(false);
@@ -27,8 +24,8 @@ public class Visitante extends javax.swing.JFrame {
         labelcontraseña.setEnabled(false);
         
         txtvuelossu.setEnabled(false);
+    
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -303,4 +300,7 @@ public class Visitante extends javax.swing.JFrame {
     private javax.swing.JPasswordField txtpassIses;
     private javax.swing.JTextPane txtvuelossu;
     // End of variables declaration//GEN-END:variables
+public void run() {
+                new Visitante().setVisible(true);
+            }
 }

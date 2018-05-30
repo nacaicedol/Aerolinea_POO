@@ -16,6 +16,13 @@ public class NewUser extends javax.swing.JFrame {
      */
     public NewUser() {
         initComponents();
+        txtid.setEnabled(false);
+        txtmail.setEnabled(false);
+        txtname.setEnabled(false);
+        txtpass.setEnabled(false);
+        txtpass2.setEnabled(false);
+        txtphone.setEnabled(false);
+        txtsurname.setEnabled(false);
     }
 
     /**
@@ -49,8 +56,8 @@ public class NewUser extends javax.swing.JFrame {
         txtpass = new javax.swing.JPasswordField();
         txtpass2 = new javax.swing.JPasswordField();
         txtphone = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnnovo = new javax.swing.JButton();
+        btnsave = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -116,14 +123,14 @@ public class NewUser extends javax.swing.JFrame {
 
         txtpass2.setText("jPasswordField2");
 
-        jButton1.setText("Nuevo");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnnovo.setText("Nuevo");
+        btnnovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnnovoActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Guardar");
+        btnsave.setText("Guardar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -178,9 +185,9 @@ public class NewUser extends javax.swing.JFrame {
                         .addComponent(txtphone))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1)
+                        .addComponent(btnnovo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)))
+                        .addComponent(btnsave)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -223,8 +230,8 @@ public class NewUser extends javax.swing.JFrame {
                     .addComponent(txtphone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)))
+                    .addComponent(btnnovo)
+                    .addComponent(btnsave)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -255,9 +262,16 @@ public class NewUser extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnpastActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnnovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnovoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        txtid.setEnabled(true);
+        txtmail.setEnabled(true);
+        txtname.setEnabled(true);
+        txtpass.setEnabled(true);
+        txtpass2.setEnabled(true);
+        txtphone.setEnabled(true);
+        txtsurname.setEnabled(true);
+    }//GEN-LAST:event_btnnovoActionPerformed
 
     private void txtsurnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsurnameActionPerformed
         // TODO add your handling code here:
@@ -300,12 +314,12 @@ public class NewUser extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton btncc;
+    private javax.swing.JButton btnnovo;
     private javax.swing.JRadioButton btnpast;
+    private javax.swing.JButton btnsave;
     private javax.swing.JRadioButton btnti;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
